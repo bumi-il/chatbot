@@ -33,13 +33,13 @@ const Chat = () => {
 
   const handleDeleteChats = async () => {
     try {
-      toast.loading("Deleting Chats", { id: "deletechats"})
+      toast.loading("Deleting Chats", { id: "deleteChats"})
       await deleteUserChats();
       setChatMessages([]);
-      toast.success("Deleted Chats Successfully", { id: "deletechats"})
+      toast.success("Deleted Chats Successfully", { id: "deleteChats"})
     } catch (error) {
       console.log(error);
-      toast.error("Deleting Chats Failed", { id: "deletechats"})
+      toast.error("Deleting Chats Failed", { id: "deleteChats"})
     }
   }
 
@@ -128,7 +128,7 @@ const Chat = () => {
               }
             }}
           >
-            CLEAR CONVERSETION
+            CLEAR CONVERSATION
           </Button>
         </Box>
       </Box>

@@ -19,6 +19,7 @@ function isCodeBlock (str: string) {
     str.includes("{") ||
     str.includes("}") ||
     str.includes("#") ||
+    str.includes("*") ||
     str.includes("//")
   );
 }
